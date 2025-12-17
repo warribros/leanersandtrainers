@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learners & Trainers helps organisations grow people, capability, and culture through world-class training. Coming soon.">
+    
+    <title>Learners & Trainers | The Future of Corporate Learning</title>
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.learnersandtrainers.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.learnersandtrainers.com">
+    <meta property="og:title" content="Learners & Trainers | The Future of Corporate Learning">
+    <meta property="og:description" content="Learners & Trainers helps organisations grow people, capability, and culture through world-class training. Be the first to know when we launch.">
+    <meta property="og:image" content="https://www.learnersandtrainers.com/images/corporate_training_hero_image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.learnersandtrainers.com">
+    <meta name="twitter:title" content="Learners & Trainers | The Future of Corporate Learning">
+    <meta name="twitter:description" content="Learners & Trainers helps organisations grow people, capability, and culture through world-class training.">
+    <meta name="twitter:image" content="https://www.learnersandtrainers.com/images/corporate_training_hero_image.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Learners & Trainers",
+          "url": "https://www.learnersandtrainers.com",
+          "logo": "https://www.learnersandtrainers.com/images/learners_and_trainers_brand_logo.png",
+          "sameAs": [
+            "https://linkedin.com/company/learners-and-trainers",
+            "https://twitter.com/learnersandtrainers",
+            "https://instagram.com/learnersandtrainers"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Learners & Trainers",
+          "url": "https://www.learnersandtrainers.com",
+          "description": "Corporate training and professional development",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Learners & Trainers"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+          --color-bg: #FFFFFF; /* Clean White */
+          --color-bg-alt: #F8FAFC; /* Light Gray/Blue */
+          --color-text: #334155; /* Dark Slate */
+          --color-text-muted: #64748B; /* Muted Slate */
+          --color-primary: #0F172A; /* Almost Black */
+          
+          --color-accent-start: #10B981; /* Emerald Green */
+          --color-accent-end: #3B82F6;   /* Blue */
+          --color-accent-glow: rgba(59, 130, 246, 0.08); /* Softer glow for light mode */
+
+          --font-body: 'Inter', sans-serif;
+
+          --spacing-xs: 0.5rem;
+          --spacing-sm: 1rem;
+          --spacing-md: 2rem;
+          --spacing-lg: 4rem;
+          --spacing-xl: 6rem;
+
+          --container-width: 1280px;
+          --header-height: 90px;
+          --border-radius: 12px;
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        html {
+          scroll-behavior: smooth;
+          font-size: 16px;
+        }
+
+        body {
+          font-family: var(--font-body);
+          color: var(--color-text);
+          background-color: var(--color-bg);
+          line-height: 1.6;
+          -webkit-font-smoothing: antialiased;
+          overflow-x: hidden;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          transition: color 0.2s ease;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        /* Background Glow Effect */
+        .glow-effect {
+          position: fixed;
+          top: -20%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80vw;
+          height: 80vh;
+          background: radial-gradient(circle, var(--color-accent-glow) 0%, rgba(255,255,255,0) 70%);
+          pointer-events: none;
+          z-index: -1;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+          color: var(--color-primary);
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+        }
+
+        h1 {
+          font-size: clamp(3rem, 6vw, 5rem);
+          font-weight: 700;
+          margin-bottom: var(--spacing-md);
+        }
+
+        .text-gradient {
+          background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          display: inline-block;
+        }
+
+        p {
+          font-size: 1.125rem;
+          color: var(--color-text-muted);
+          margin-bottom: var(--spacing-md);
+          font-weight: 400; /* Increased weight for readability on white */
+        }
+
+        .subheadline {
+          font-size: 1.25rem;
+          max-width: 500px;
+          line-height: 1.6;
+        }
+
+        /* Layout Utilities */
+        .container {
+          width: 100%;
+          max-width: var(--container-width);
+          margin: 0 auto;
+          padding: 0 var(--spacing-md);
+        }
+
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        /* Skip Link */
+        .skip-link {
+          position: absolute;
+          top: -40px;
+          left: 0;
+          background: var(--color-accent-end);
+          color: white;
+          padding: 8px;
+          z-index: 100;
+          transition: top 0.2s;
+          border-radius: 0 0 4px 4px;
+        }
+
+        .skip-link:focus {
+          top: 0;
+        }
+
+        /* Header */
+        .site-header {
+          height: var(--header-height);
+          display: flex;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 50;
+          background: transparent;
+          border-bottom: none;
+        }
+
+        .site-header .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .logo-image {
+          height: 60px;
+          width: auto;
+          border-radius: 4px;
+          /* Removed white background styling since page is white */
+          display: block;
+        }
+
+        .logo-link {
+          display: block;
+          /* Removed background styling */
+        }
+
+        .nav-list {
+          display: flex;
+          gap: var(--spacing-md);
+        }
+
+        .nav-link {
+          font-weight: 500;
+          font-size: 0.95rem;
+          color: var(--color-text-muted);
+        }
+
+        .nav-link:hover, .nav-link:focus {
+          color: var(--color-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          padding-top: var(--header-height);
+          position: relative;
+        }
+
+        .hero-grid {
+          display: grid;
+          grid-template-columns: 1fr 0.8fr;
+          gap: var(--spacing-xl);
+          align-items: center;
+        }
+
+        .hero-content {
+          position: relative;
+          z-index: 10;
+        }
+
+        .hero-image-wrapper {
+          position: relative;
+          border-radius: 24px;
+          overflow: hidden;
+          /* Adjusted shadow for light mode */
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 40px rgba(0, 0, 0, 0.1);
+          transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+          transition: transform 0.5s ease;
+        }
+
+        .hero-image-wrapper:hover {
+          transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+        }
+
+        .hero-image {
+          width: 100%;
+          height: auto;
+          /* Removed heavy filters for light mode */
+          filter: contrast(105%);
+        }
+
+        .image-overlay {
+          position: absolute;
+          inset: 0;
+          /* Subtler overlay for light mode */
+          background: linear-gradient(to top right, rgba(255, 255, 255, 0.1), transparent);
+          pointer-events: none;
+        }
+
+        /* Email Form */
+        .signup-form {
+          margin-top: var(--spacing-md);
+          margin-bottom: var(--spacing-md);
+          max-width: 480px;
+        }
+
+        .input-wrapper {
+          display: flex;
+          background: #FFFFFF;
+          border: 1px solid #E2E8F0; /* Visible border */
+          border-radius: 50px;
+          padding: 6px;
+          transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-wrapper:focus-within {
+          border-color: var(--color-accent-end);
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-input {
+          flex: 1;
+          background: transparent;
+          border: none;
+          padding: 0 1.5rem;
+          color: var(--color-primary);
+          font-family: var(--font-body);
+          font-size: 1rem;
+        }
+
+        .form-input:focus {
+          outline: none;
+        }
+
+        .form-input::placeholder {
+          color: var(--color-text-muted);
+          opacity: 0.6;
+        }
+
+        .btn {
+          background: var(--color-primary);
+          color: white;
+          padding: 0.875rem 2rem;
+          border: none;
+          border-radius: 40px;
+          font-weight: 600;
+          font-size: 0.95rem;
+          cursor: pointer;
+          transition: transform 0.2s, box-shadow 0.2s;
+          white-space: nowrap;
+        }
+
+        .btn:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+        }
+
+        .btn:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.1);
+        }
+
+        .form-note {
+          font-size: 0.875rem;
+          color: var(--color-text-muted);
+          margin-top: var(--spacing-sm);
+          font-family: monospace;
+          opacity: 0.8;
+        }
+
+        /* Social Section */
+        .social-links {
+          display: flex;
+          gap: var(--spacing-md);
+          margin-top: var(--spacing-lg);
+        }
+
+        .social-link {
+          color: var(--color-text-muted);
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          transition: color 0.2s;
+        }
+
+        .social-link:hover {
+          color: var(--color-primary);
+        }
+
+        /* Footer */
+        .site-footer {
+          padding: var(--spacing-md) 0;
+          border-top: 1px solid #E2E8F0;
+          margin-top: auto;
+        }
+
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .copyright {
+          font-size: 0.875rem;
+          color: var(--color-text-muted);
+          margin: 0;
+        }
+
+        .footer-links {
+          display: flex;
+          gap: var(--spacing-md);
+        }
+
+        .footer-link {
+          font-size: 0.875rem;
+          color: var(--color-text-muted);
+        }
+
+        .footer-link:hover {
+          color: var(--color-primary);
+        }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+          .hero-grid {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            text-align: center;
+          }
+
+          .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .subheadline {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .signup-form {
+            width: 100%;
+          }
+          
+          .hero-image-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            transform: none;
+          }
+          
+          .hero-image-wrapper:hover {
+            transform: none;
+          }
+        }
+
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 2.5rem;
+          }
+          
+          .nav-list {
+            display: none;
+          }
+          
+          .input-wrapper {
+            flex-direction: column;
+            background: transparent;
+            border: none;
+            padding: 0;
+            gap: var(--spacing-sm);
+            border-radius: 0;
+            box-shadow: none;
+          }
+          
+          .form-input {
+            background: #F1F5F9;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 100%;
+          }
+          
+          .btn {
+            width: 100%;
+            border-radius: 8px;
+          }
+          
+          .footer-content {
+            flex-direction: column;
+            gap: var(--spacing-sm);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          html {
+            scroll-behavior: auto;
+          }
+          
+          *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+          }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="glow-effect"></div>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="/" aria-label="Learners & Trainers Home" class="logo-link">
+                <img src="/images/logo.jpeg" alt="Learners & Trainers Logo" class="logo-image">
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 id="hero-heading">We’re building the <br><span class="text-gradient">future of learning.</span></h1>
+                        <p class="subheadline">Learners & Trainers helps organisations grow people, capability, and culture through world-class training.</p>
+                        
+                        <form class="signup-form" action="#" method="POST" id="notify">
+                            <div class="input-wrapper">
+                                <label for="email" class="visually-hidden">Email address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Please enter your email address" autocomplete="email" required>
+                                <button type="submit" class="btn">Notify Me</button>
+                            </div>
+                            <p class="form-note">-_ Notify me when App is launched _-</p>
+                        </form>
+
+                        <div class="social-links" id="social">
+                            <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                        </div>
+                    </div>
+                    <!-- Keeping the image but making it subtle or removing it for the "centered" look if requested, 
+                         but for now I'll keep the split layout as it's robust, but style it to fit the dark theme -->
+                    <div class="hero-image-wrapper">
+                        <img src="https://placehold.co/800x600/1e293b/ffffff?text=Hero+Image" alt="Placeholder image" class="hero-image" loading="eager">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Learners & Trainers.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
